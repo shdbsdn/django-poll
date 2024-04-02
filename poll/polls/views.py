@@ -6,6 +6,7 @@ from .models import Choice, Question
 from django.template import loader
 from django.urls import reverse
 from django.views import generic
+from django.utils import timezone
 
 def index(request):
     latest_question_list = Question.objects.order_by("-pub_date")[:5]
