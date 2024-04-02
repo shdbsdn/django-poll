@@ -8,3 +8,8 @@ polls/templates/polls/index.html¶
 {% else %}
     <p>No polls are available.</p>
 {% endif %}
+
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'polls/style.css' %}">

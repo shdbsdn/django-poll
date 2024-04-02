@@ -1,0 +1,12 @@
+import shutil
+
+# Specify the path of the picture file on your desktop
+desktop_path = ""C:/Users/nohyo/Desktop/Background Image.jpg""
+
+# Specify the destination path where you want to upload the picture file
+destination_path = "/bce/lectures/2024-web-application-programming/shdbsdn/django-poll/poll/polls/static/polls/images/background.png"
+
+# Use the shutil module to copy the file from the desktop to the destination path
+shutil.copyfile(desktop_path, destination_path)
+
+print("Picture file uploaded successfully!")
